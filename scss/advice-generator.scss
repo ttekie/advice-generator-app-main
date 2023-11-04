@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+// sass custom variables
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue:  hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+$quote-size: 22px;
+html,
+body {
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Manrope', sans-serif;
+   overflow-y: hidden;
+}
+body {
+   background-color: $dark-blue;
+   max-width: 1440px;
+}
+#main-container {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#advice-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: $dark-grayish-blue;
+   padding: 2rem;
+   border-radius: 15px;
+}
+#advice-container div:first-of-type {
+   color: $neon-green;
+   text-transform: uppercase;
+   font-size: 14px;
+   letter-spacing: 3px;
+   margin-bottom: 1.5rem;
+}
+#advice-container div:nth-child(2) {
+   width: 400px;
+   height: 120px;
+}
+#advice-container > img {
+   margin: 1.8rem 0;
+}
+q {
+   color: $light-cyan;
+   letter-spacing: 1px;
+   width: 400px;
+   font-size: $quote-size;
+}
+.dice-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 30.75rem;
+   padding: 0.7rem;
+   border-radius: 50%;
+   border: none;
+   background-color: $neon-green;
+}
+.dice-btn:hover {
+   box-shadow: 0 0 20px 8px hsl(150, 100%, 66%);
+}
+.attribution {
+   text-align: center;
+   color: $light-cyan;
+   font-family: inherit;
+   position: relative;
+}
+.attribution > a {
+   position: absolute;
+   color: $neon-green;
+   text-decoration: none;
+   writing-mode:vertical-lr;
+   text-orientation: sideways-right;
+}
